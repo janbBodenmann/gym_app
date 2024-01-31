@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+use App\Http\Controllers\SideController;
+
+Route::get('/', [SideController::class, 'welcome']);
+Route::get('/home', [SideController::class, 'home']);
+Route::get('/login', [SideController::class, 'login']);
+
