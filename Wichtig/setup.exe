@@ -1,0 +1,21 @@
+Laravel:
+
+composer install
+cp .env.example .env    
+php artisan key:generate         |        
+php artisan serve                |
+                                 |
+---------------------------------|
+
+Tailwind:
+
+npm install tailwindcss
+
+Css:
+
+npm run dev
+npm run watch
+
+
+
+
