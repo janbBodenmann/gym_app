@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "watch": "mix watch"
     },
     "devDependencies": {
         "@inertiajs/vue3": "^1.0.0",
@@ -17,4 +18,5 @@
         "vite": "^5.0.0",
         "vue": "^3.4.0"
     }
+    
 }
