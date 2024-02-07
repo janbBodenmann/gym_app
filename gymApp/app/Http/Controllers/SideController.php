@@ -20,4 +20,12 @@ class SideController extends Controller
     {
         return view('login');
     }
+    public function settings()
+    {
+        return view('settings');
+    }
+    public function profile()
+    {
+        return view('profile');
+    }
 }

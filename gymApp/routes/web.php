@@ -22,4 +22,5 @@ use App\Http\Controllers\SideController;
 Route::get('/', [SideController::class, 'welcome']);
 Route::get('/home', [SideController::class, 'home']);
 Route::get('/login', [SideController::class, 'login']);
-
+Route::get('/settings',[SideController::class, 'settings']);
+Route::get('/profile',[SideController::class, 'profile']);
