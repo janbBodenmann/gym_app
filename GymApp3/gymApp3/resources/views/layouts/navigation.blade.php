@@ -14,17 +14,18 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <x-nav-link :href="route('welcome')" :active="request()->routeIs('welcome')">
+                        {{ __('Welcome') }}
+                    </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('welcome')" :active="request()->routeIs('welcome')">
-                        {{ __('Welcome') }}
-                    </x-nav-link>
+                   
                     <x-nav-link :href="route('page1')" :active="request()->routeIs('page1')">
-                        {{ __('Page 1') }}
+                        {{ __('Tipps') }}
                     </x-nav-link>
                     <x-nav-link :href="route('page2')" :active="request()->routeIs('page2')">
-                        {{ __('Page 2') }}
+                        {{ __('Übungen') }}
                     </x-nav-link>
                 </div>
             </div>
