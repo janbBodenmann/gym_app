@@ -37,7 +37,7 @@ Starte XAMPP und starte Apache und MySQL.
 Öffne die `.env-Datei` im Laravel-Projekt und ändere die Zeile:
 
 
-<code>DB_DATABASE=gymapp2</code>
+<code>DB_DATABASE=gymapp3</code>
 
 zu:
 
