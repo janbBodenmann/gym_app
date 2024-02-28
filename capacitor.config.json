@@ -1,0 +1,8 @@
+{
+  "appId": "com.example.mygymapp",
+  "appName": "GymApp",
+  "webDir": "my-capacitor-app",
+  "server": {
+    "androidScheme": "https"
+  }
+}
