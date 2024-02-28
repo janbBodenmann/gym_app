@@ -19,6 +19,7 @@
                         <a href="{{ route('arm') }}" class="exercise-item" data-description="Beschreibung für Armübungen">
                             <img src="arm.jpg" alt="Armübungen" style="height:200px, width:200px";>
                         </a>
+                        <br>
                         <a href="{{ route('bauch') }}" class="exercise-item" data-description="Beschreibung für Bauchübungen">
                             <img src="bauch.jpg" alt="Bauchübungen" style="height:200px, width:200px";>
                         </a>
