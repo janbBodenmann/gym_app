@@ -16,19 +16,26 @@
                     </p>
 
                     <div class="exercise-gallery mt-4">
-                        <a href="{{ route('arm') }}" class="exercise-item" data-description="Beschreibung für Armübungen">
-                            <img src="arm.jpg" alt="Armübungen" style="height:200px, width:200px";>
-                        </a>
-                        <br>
-                        <a href="{{ route('bauch') }}" class="exercise-item" data-description="Beschreibung für Bauchübungen">
-                            <img src="bauch.jpg" alt="Bauchübungen" style="height:200px, width:200px";>
-                        </a>
-                        <a href="{{ route('beine') }}" class="exercise-item" data-description="Beschreibung für Beinübungen">
-                            <img src="leg.jpg" alt="Beinübungen" style="height:200px, width:200px";>
-                        </a>
-                        <a href="{{ route('ruecken') }}" class="exercise-item" data-description="Beschreibung für Rückenübungen">
-                            <img src="rücken.jpg" alt="Rückenübungen" style="height:200px, width:200px";>
-                        </a>
+                        <div class="arm">
+                            <a href="{{ route('arm') }}" class="exercise-item" data-description="Beschreibung für Armübungen">
+                                <img src="arm.jpg" alt="Armübungen" style="height:200px, width:200px";>
+                            </a>
+                        </div>
+                        <div class="bauch">
+                            <a href="{{ route('bauch') }}" class="exercise-item" data-description="Beschreibung für Bauchübungen">
+                                <img src="bauch.jpg" alt="Bauchübungen" style="height:200px, width:200px";>
+                            </a>
+                        </div>
+                        <div class="beine">
+                            <a href="{{ route('beine') }}" class="exercise-item" data-description="Beschreibung für Beinübungen">
+                                <img src="leg.jpg" alt="Beinübungen" style="height:200px, width:200px";>
+                            </a>
+                        </div>
+                        <div class="ruecken">
+                            <a href="{{ route('ruecken') }}" class="exercise-item" data-description="Beschreibung für Rückenübungen">
+                                <img src="rücken.jpg" alt="Rückenübungen" style="height:200px, width:200px";>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,5 +84,10 @@
 
     .exercise-item.hovered {
         transform: rotateY(180deg);
+    }
+
+    .exercise-gallery > * {
+        border: 2px solid #3772FF;
+        border-radius: 10px;
     }
 </style>
