@@ -27,6 +27,12 @@
                     <x-nav-link :href="route('Übungen')" :active="request()->routeIs('Übungen')">
                         {{ __('Übungen') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('preis')" :active="request()->routeIs('preis')">
+                        {{ __('Preis') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('kontakt')" :active="request()->routeIs('kontakt')">
+                        {{ __('Kontakt') }}
+                    </x-nav-link>
                 </div>
             </div>
 

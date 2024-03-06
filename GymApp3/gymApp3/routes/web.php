@@ -56,6 +56,14 @@ Route::get('/welcome', function () {
     return view('welcome');
 })->middleware(['auth', 'verified'])->name('welcome');
 
+Route::get('/preis',function() {
+    return view('preis');
+})->middleware(['auth', 'verified'])->name('preis');
+
+Route::get('/kontakt',function() {
+    return view('kontakt');
+})->middleware(['auth', 'verified'])->name('kontakt');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
