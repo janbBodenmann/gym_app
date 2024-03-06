@@ -39,13 +39,13 @@ Route::get('/bauch',function() {
     return view('bauch');
 })->middleware(['auth', 'verified'])->name('bauch');
 
-Route::get('/page1',function() {
-    return view('page1');
-})->middleware(['auth', 'verified'])->name('page1');
+Route::get('/Tipps',function() {
+    return view('Tipps');
+})->middleware(['auth', 'verified'])->name('Tipps');
 
-Route::get('/page2',function() {
-    return view('page2');
-})->middleware(['auth', 'verified'])->name('page2');
+Route::get('/Übungen',function() {
+    return view('Übungen');
+})->middleware(['auth', 'verified'])->name('Übungen');
 
 
 Route::get('/dashboard', function () {
