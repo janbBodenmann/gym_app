@@ -200,7 +200,7 @@ textarea:valid+label {
 }
 
 .submit-btn {
-  background-color: #fd917e;
+  background-color: lightblue;
   filter: drop-shadow(2px 2px 3px #0003);
   color: #fff;
   font-family: "Poppins",sans-serif;
