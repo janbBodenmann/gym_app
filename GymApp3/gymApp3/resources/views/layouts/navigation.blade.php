@@ -21,10 +21,10 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                    
-                    <x-nav-link :href="route('page1')" :active="request()->routeIs('page1')">
+                    <x-nav-link :href="route('Tipps')" :active="request()->routeIs('Tipps')">
                         {{ __('Tipps') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('page2')" :active="request()->routeIs('page2')">
+                    <x-nav-link :href="route('Übungen')" :active="request()->routeIs('Übungen')">
                         {{ __('Übungen') }}
                     </x-nav-link>
                 </div>
@@ -87,12 +87,12 @@
             <x-responsive-nav-link :href="route('welcome')">
                 {{__('welcome')}}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('page1')" :active="request()->routeIs('page1')">
-                {{ __('Page 1') }}
+            <x-responsive-nav-link :href="route('Tipps')" :active="request()->routeIs('Tipps')">
+                {{ __('Tipps') }}
             </x-responsive-nav-link>
 
-            <x-responsive-nav-link :href="route('page2')" :active="request()->routeIs('page2')">
-                {{ __('Page 2') }}
+            <x-responsive-nav-link :href="route('Übungen')" :active="request()->routeIs('Übungen')">
+                {{ __('Übungen') }}
             </x-responsive-nav-link>
         </div>
 
@@ -105,7 +105,7 @@
 
             <div class="mt-3 space-y-1">
                 <x-responsive-nav-link :href="route('profile.edit')">
-                    {{ __('Profile') }}
+                    {{ __('Profil') }}
                 </x-responsive-nav-link>
 
                 <!-- Authentication -->
@@ -115,7 +115,7 @@
                     <x-responsive-nav-link :href="route('logout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                        {{ __('Log Out') }}
+                        {{ __('Ausloggen') }}
                     </x-responsive-nav-link>
                 </form>
             </div>
