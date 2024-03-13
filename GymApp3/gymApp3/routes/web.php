@@ -2,19 +2,15 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Models\Tipp;
 
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
+
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -40,17 +36,28 @@ Route::get('/bauch',function() {
 })->middleware(['auth', 'verified'])->name('bauch');
 
 Route::get('/Tipps',function() {
-    return view('Tipps');
+    return view('tipps', [
+        'tipps' => App\Models\Tipp::all()
+    ]);
 })->middleware(['auth', 'verified'])->name('Tipps');
+
+// Single Tipp
+Route::get('/tipp/{id}', function ($id) {
+    $tipp = App\Models\Tipp::find($id);
+    if ($tipp === null) {
+        return redirect()->route('Tipps');
+    } // überprüft ob der Tipp existiert
+    return view('tipp', [
+        'tipp' => $tipp
+    ]);
+})->middleware(['auth', 'verified'])->name('Tipp');
 
 Route::get('/Übungen',function() {
     return view('Übungen');
 })->middleware(['auth', 'verified'])->name('Übungen');
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -68,6 +75,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
+    
     
 });
 
