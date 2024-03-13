@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Factories\user2Factory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
