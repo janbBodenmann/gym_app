@@ -55,6 +55,7 @@
                         <div class="tip">
                             <divc class="tip-name">
                                 <a href="#"><h4>Gesundheit</h4></a>
+                                
                             </divc>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
                                   <defs>
