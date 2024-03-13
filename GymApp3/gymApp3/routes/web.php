@@ -40,8 +40,17 @@ Route::get('/bauch',function() {
 })->middleware(['auth', 'verified'])->name('bauch');
 
 Route::get('/Tipps',function() {
-    return view('Tipps');
+    return view('tipps', [
+        'tipps' => App\Models\Tipp::all()
+    ]);
 })->middleware(['auth', 'verified'])->name('Tipps');
+
+// Single Tipp
+Route::get('/tipp/{id}', function ($id) {
+    return view('tipp', [
+        'tipp' => App\Models\Tipp::find($id)
+    ]);
+})->middleware(['auth', 'verified'])->name('Tipp');
 
 Route::get('/Übungen',function() {
     return view('Übungen');
