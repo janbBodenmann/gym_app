@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Models\Tipp;
 
 
 
@@ -42,8 +43,12 @@ Route::get('/Tipps',function() {
 
 // Single Tipp
 Route::get('/tipp/{id}', function ($id) {
+    $tipp = App\Models\Tipp::find($id);
+    if ($tipp === null) {
+        return redirect()->route('Tipps');
+    } // überprüft ob der Tipp existiert
     return view('tipp', [
-        'tipp' => App\Models\Tipp::find($id)
+        'tipp' => $tipp
     ]);
 })->middleware(['auth', 'verified'])->name('Tipp');
 
