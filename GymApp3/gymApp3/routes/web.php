@@ -7,33 +7,9 @@ use App\Models\Tipp;
 
 
 
-
-
-
-
-
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/arm',function() {
-    return view('arm');
-})->middleware(['auth', 'verified'])->name('arm');
-
-
-Route::get('/beine',function() {
-    return view('beine');
-})->middleware(['auth', 'verified'])->name('beine');
-
-
-Route::get('/ruecken',function() {
-    return view('rücken');
-})->middleware(['auth', 'verified'])->name('ruecken');
-
-
-Route::get('/bauch',function() {
-    return view('bauch');
-})->middleware(['auth', 'verified'])->name('bauch');
 
 Route::get('/Tipps',function() {
     return view('tipps', [
