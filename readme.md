@@ -23,6 +23,8 @@ Um die Gym-Webseite lokal auf deinem Rechner einzurichten, folge bitte diesen Sc
 Gym App Installieren:
 
 ```bash
+  cd gymapp3
+  cd gymapp3
   composer install
   cp .env.example .env
   php artisan key:generate
