@@ -1,4 +1,4 @@
-# Casino Webseite Setup-Anleitung
+# Gym App Setup-Anleitung
 
 Um die Gym-Webseite lokal auf deinem Rechner einzurichten, folge bitte diesen Schritten:
 
