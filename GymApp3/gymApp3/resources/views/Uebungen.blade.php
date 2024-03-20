@@ -1,5 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
+        <link rel="stylesheet" href="{{ asset('css/style.css')}}">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Übungen') }}
         </h2>
@@ -69,76 +70,3 @@
         });
     </script>
 </x-app-layout>
-
-<style>
-    /* google font nunito */
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-    /* h3 {
-        font-family: "Nunito", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 1000;
-        font-style: bold;
-        font-size: 50px
-    } */
-
-    h4 {
-        font-family: "Nunito", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 30px
-    }
-    .exercise-gallery {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-    .exercise-item {
-        position: relative;
-        cursor: pointer;
-        transition: transform 0.3s;
-        text-decoration: none;
-    }
-
-    
-    .exercise-item.hovered {
-        transform: rotateY(180deg);
-    }
-    
-    
-    /* uebung */
-    .exercise-gallery > * {
-        border: 2px solid #3772FF;
-        border-radius: 10px;
-    }
-    
-    .uebung {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 130px;
-        width: auto;
-        margin: 2rem;
-        padding: 3rem;
-    }
-    
-    .exercise-item img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        object-position: left 20%;
-        border-radius: 8px;
-    }
-
-    .uebung-name {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        padding: 0;
-        margin: 0;
-    }
-</style>

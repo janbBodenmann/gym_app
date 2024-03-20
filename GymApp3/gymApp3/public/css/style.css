@@ -1,0 +1,76 @@
+/* google font nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: bold;
+    font-size: 50px
+} */
+
+h4 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px
+}
+
+/* Uebungen.blade.php */
+.exercise-gallery {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.exercise-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+.exercise-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: left 20%;
+    border-radius: 8px;
+}
+.exercise-item.hovered {
+    transform: rotateY(180deg);
+}
+
+/* uebung und tipp*/
+.exercise-gallery > *, .tip-gallery > * {
+    border: 2px solid #3772FF;
+    border-radius: 10px;
+}
+.uebung, .tip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    width: auto;
+    margin: 2rem;
+    padding: 3rem;
+    border: 2px solid #3772FF;
+    border-radius: 10px;
+}
+.uebung-name, .tip-name {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Tipps.blade.php */
+.tip-gallery {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
