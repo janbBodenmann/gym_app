@@ -52,11 +52,23 @@ Route::get('/tipp/{id}', function ($id) {
     ]);
 })->middleware(['auth', 'verified'])->name('Tipp');
 
-Route::get('/Übungen',function() {
-    return view('Übungen');
-})->middleware(['auth', 'verified'])->name('Übungen');
+// Uebungen
+Route::get('/uebungen',function() {
+    return view('uebungen', [
+        'Uebungen' => App\Models\Uebungen::all()
+    ]);
+})->middleware(['auth', 'verified'])->name('Uebungen');
 
-
+// Single Uebung
+Route::get('/uebung/{id}', function ($id) {
+    $uebung = App\Models\Uebungen::find($id);
+    if ($uebung === null) {
+        return redirect()->route('Uebungen');
+    } // überprüft ob die Übung existiert
+    return view('Uebung', [
+        'uebung' => $uebung
+    ]);
+})->middleware(['auth', 'verified'])->name('Uebung');
 
 
 Route::get('/welcome', function () {
