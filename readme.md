@@ -1,69 +1,48 @@
-# Casino Webseite Setup-Anleitung
+
+# Gym App Setup-Anleitung
+
 
 Um die Gym-Webseite lokal auf deinem Rechner einzurichten, folge bitte diesen Schritten:
 
-## Projekt klonen
 
-Zuerst musst du das Projekt von Git klonen </br>
-<https://github.com/janbBodenmann/gym_app.git>
 
-## PHP-Terminal
+## Features
 
-```bash
-cd GymApp3
-```
+- Tipps
+- Übungen
+- Statistiken
 
-```bash
-composer install
-cp .env.example .env
-php artisan key:generate
-```
 
-## VITE-Terminal
+## Screenshots
 
-```bash
-cd GymApp3
-```
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Installation
+
+Gym App Installieren:
 
 ```bash
-npm install
-npm run build
+  composer install
+  cp .env.example .env
+  php artisan key:generate
+
+  npm install
+  npm run build
+
+  php artisan serve
+
+  php artisan migrate
 ```
 
-## XAMPP starten
-Starte XAMPP und starte Apache und MySQL.
+Man muss sich immer im Ordner \GymApp3\gymApp3 befinden!
+    
+## Authors
 
-## Datenbank konfigurieren
-Öffne die `.env-Datei` im Laravel-Projekt und ändere die Zeile:
-
-
-<code>DB_DATABASE=gymapp3</code>
-
-zu:
-
-<code>DB_DATABASE=test</code>
-
-## Datenbank migrieren
-Führe den folgenden Befehl im Terminal (PHP) aus, um die Datenbankmigration durchzuführen:
-
-```bash
-php artisan migrate
-```
-
-## PHP-Server starten
-Starte den PHP-Server mit dem folgenden Befehl:
-
-```bash
-php artisan serve
-```
-
-Öffne die Webseite mit dem Link, den `php artisan serve` bereitstellt.
-
-## Vue-Entwicklungsserver starten
-Öffne ein weiteres Terminal und führe den Befehl aus:
-```bash
-npm run dev
-```
+- [@TkyoZero](https://www.github.com/TkyoZero)
+- [@janbBodenmann](https://www.github.com/janbBodenmann)
+- [@RobinHood0101](https://www.github.com/RobinHood0101)
 
 
-### Nun läuft alles und die Seite ist live und wird live aktualisiert, sobald du etwas im Code änderst.
+![Logo](https://github.com/janbBodenmann/gym_app/tree/main/GymApp3/gymApp3/public/logo.png)
+
