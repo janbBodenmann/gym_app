@@ -2,7 +2,7 @@
     <x-slot name="header">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{$uebung["title"]}}
+            <a href="Tipps">Zurück zu Übungen</a>
         </h2>
       <?php
       $imagePath = 'logo.png';
@@ -31,6 +31,9 @@
                                 <path id="Pfad_13" data-name="Pfad 13" d="M13.749,20.625a1.25,1.25,0,0,1-.885-2.133L16.356,15l-3.489-3.492a1.249,1.249,0,0,1,1.767-1.767l4.374,4.374a1.247,1.247,0,0,1,0,1.767l-4.374,4.377A1.251,1.251,0,0,1,13.749,20.625Z" fill="#5f6379"/>
                               </g>
                             </g>
+
+                            {{-- Text --}}
+
                         </svg>
                     </div>
                     @endforeach
