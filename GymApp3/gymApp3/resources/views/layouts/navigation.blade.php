@@ -21,10 +21,10 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                    
-                    <x-nav-link :href="route('Tipps')" :active="request()->routeIs('Tipps')">
+                    <x-nav-link :href="route('Tipps')" :active="request()->routeIs('Tipps') || request()->routeIs('Tipp')">
                         {{ __('Tipps') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('Uebungen')" :active="request()->routeIs('Uebungen')">
+                    <x-nav-link :href="route('Uebungen')" :active="request()->routeIs('Uebungen') || request()->routeIs('Uebung')">
                         {{ __('Übungen') }}
                     </x-nav-link>
                     <x-nav-link :href="route('preis')" :active="request()->routeIs('preis')">
