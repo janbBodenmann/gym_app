@@ -34,7 +34,8 @@ Gym App Installieren:
 
   php artisan migrate
 
-  php artisan serve
+  php artisan serve --host=0.0.0.0 --port=8000
+  http://10.5.43.8:8000/
 
   npx cap sync
   npx cap open android
