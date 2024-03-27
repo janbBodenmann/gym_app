@@ -35,7 +35,13 @@ Gym App Installieren:
   php artisan migrate
 
   php artisan serve
+
+  npx cap sync
+  npx cap open android
+
 ```
+
+
 
 Man muss sich immer im Ordner \GymApp3\gymApp3 befinden!
     
